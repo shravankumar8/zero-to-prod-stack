@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hands-on tutorial playbook for HTML, CSS, and JavaScript revision.">
+  <title>HTML CSS JavaScript Tutorial Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Tutorial Playbook Guide</p>
+      <h1>Learn and Revise <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span></h1>
+      <p class="hero__subtitle">
+        A hands-on revision website that explains core concepts, web fundamentals, and practical coding examples.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#foundations">Start with Web Foundations</a>
+        <a class="btn btn--ghost" href="#practice-lab">Jump to Practice Lab</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h2>Navigation</h2>
+      <nav>
+        <a href="#foundations">Web Foundations</a>
+        <a href="#html-roadmap">HTML Tutorial</a>
+        <a href="#css-roadmap">CSS Tutorial</a>
+        <a href="#js-roadmap">JavaScript Tutorial</a>
+        <a href="#practice-lab">Practice Lab</a>
+        <a href="#roadmaps">Roadmaps</a>
+      </nav>
+      <section class="quick-note">
+        <h3>How to revise</h3>
+        <ol>
+          <li>Read one section.</li>
+          <li>Try the mini exercise.</li>
+          <li>Tick completed topics.</li>
+          <li>Repeat daily for retention.</li>
+        </ol>
+      </section>
+    </aside>
+
+    <section class="content">
+      <section id="foundations" class="card section">
+        <h2>Web Foundations</h2>
+        <p>
+          Before HTML, CSS, and JavaScript, learn how the web works: HTTP, DNS, domain names, browsers, hosting, SEO, and request-response flow.
+        </p>
+        <div id="foundations-grid" class="grid"></div>
+      </section>
+
+      <section id="html-roadmap" class="card section">
+        <div class="section__header">
+          <h2>HTML Mastery Track</h2>
+          <p>Structure your pages with semantic markup, accessibility, and SEO-friendly tags.</p>
+        </div>
+        <div id="html-content"></div>
+      </section>
+
+      <section id="css-roadmap" class="card section">
+        <div class="section__header">
+          <h2>CSS Mastery Track</h2>
+          <p>Control layout, typography, responsiveness, animation, and scalable styling architecture.</p>
+        </div>
+        <div id="css-content"></div>
+      </section>
+
+      <section id="js-roadmap" class="card section">
+        <div class="section__header">
+          <h2>JavaScript Mastery Track</h2>
+          <p>Build strong programming fundamentals from variables to async, DOM, modules, and performance.</p>
+        </div>
+        <div id="js-content"></div>
+      </section>
+
+      <section id="practice-lab" class="card section">
+        <div class="section__header">
+          <h2>Practice Lab (Hands-on)</h2>
+          <p>Experiment quickly with live examples to reinforce concepts.</p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="lab-box">
+            <h3>HTML Preview Playground</h3>
+            <p>Write HTML and render output live.</p>
+            <textarea id="html-input" spellcheck="false"></textarea>
+            <button id="render-html" class="btn btn--small">Render HTML</button>
+            <iframe id="html-preview" title="Live HTML preview"></iframe>
+          </article>
+
+          <article class="lab-box">
+            <h3>CSS Styling Playground</h3>
+            <p>Change box properties and observe visual output.</p>
+            <label>Background
+              <input id="bg-color" type="color" value="#4f46e5">
+            </label>
+            <label>Border Radius
+              <input id="radius" type="range" min="0" max="60" value="16">
+            </label>
+            <label>Rotate
+              <input id="rotate" type="range" min="-45" max="45" value="0">
+            </label>
+            <div id="css-demo-box">Style Me</div>
+          </article>
+
+          <article class="lab-box">
+            <h3>JavaScript Mini Console</h3>
+            <p>Run predefined examples and inspect output.</p>
+            <div class="button-row">
+              <button class="btn btn--small js-snippet" data-snippet="variables">Variables</button>
+              <button class="btn btn--small js-snippet" data-snippet="arrayMap">Array map</button>
+              <button class="btn btn--small js-snippet" data-snippet="asyncAwait">Async/Await</button>
+              <button class="btn btn--small js-snippet" data-snippet="closure">Closure</button>
+            </div>
+            <pre id="js-output"></pre>
+          </article>
+        </div>
+      </section>
+
+      <section id="roadmaps" class="card section">
+        <h2>Continue Learning</h2>
+        <p>Use these roadmaps for detailed and continuously updated learning paths.</p>
+        <ul class="links">
+          <li><a href="https://roadmap.sh/frontend" target="_blank" rel="noreferrer">Frontend Roadmap</a></li>
+          <li><a href="https://roadmap.sh/html" target="_blank" rel="noreferrer">HTML Roadmap</a></li>
+          <li><a href="https://roadmap.sh/css" target="_blank" rel="noreferrer">CSS Roadmap</a></li>
+          <li><a href="https://roadmap.sh/javascript" target="_blank" rel="noreferrer">JavaScript Roadmap</a></li>
+          <li><a href="https://roadmap.sh/full-stack" target="_blank" rel="noreferrer">Full-Stack Roadmap</a></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built for revision: Learn concepts -> try examples -> iterate daily.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
